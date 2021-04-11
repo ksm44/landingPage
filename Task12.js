@@ -10,12 +10,7 @@ let num = 454421547873;
 
 function descendingOrder(n){
   //...
- let arr = [];
- n = "" + n;
- arr = n.split("");
- n = arr.sort().reverse().join("");
- n = +n;
- return n;
+ return +(("" + n).split("").sort().reverse().join(""));
   
 }
 
